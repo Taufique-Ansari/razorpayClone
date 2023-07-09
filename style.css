@@ -7,6 +7,7 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+
 *,
 ::before,
 ::after {
@@ -61,6 +62,7 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
+  overflow-x: hidden;
   /* 2 */
 }
 
@@ -542,6 +544,10 @@ video {
   bottom: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -558,6 +564,10 @@ video {
   top: 100%;
 }
 
+.top-\[3px\] {
+  top: 3px;
+}
+
 .float-right {
   float: right;
 }
@@ -566,24 +576,13 @@ video {
   margin: 0px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-}
-
-.mx-\[143px\] {
-  margin-left: 143px;
-  margin-right: 143px;
-}
-
-.mx-\[148px\] {
-  margin-left: 148px;
-  margin-right: 148px;
-}
-
-.mx-\[150px\] {
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 .mx-\[16px\] {
@@ -622,6 +621,10 @@ video {
 
 .mb-\[22px\] {
   margin-bottom: 22px;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .ml-9 {
@@ -748,8 +751,8 @@ video {
   height: 55px;
 }
 
-.h-\[600px\] {
-  height: 600px;
+.h-\[90px\] {
+  height: 90px;
 }
 
 .h-auto {
@@ -772,6 +775,10 @@ video {
   width: 8rem;
 }
 
+.w-\[100vw\] {
+  width: 100vw;
+}
+
 .w-\[160px\] {
   width: 160px;
 }
@@ -788,16 +795,8 @@ video {
   width: 25px;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
+.w-\[670px\] {
+  width: 670px;
 }
 
 .w-\[950px\] {
@@ -812,8 +811,20 @@ video {
   width: 100%;
 }
 
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+
+.max-w-\[410px\] {
+  max-width: 410px;
+}
+
 .max-w-\[510px\] {
   max-width: 510px;
+}
+
+.max-w-\[680px\] {
+  max-width: 680px;
 }
 
 .flex-grow {
@@ -908,15 +919,15 @@ video {
   border-radius: 0.125rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-\[0\.5px\] {
   border-width: 0.5px;
 }
 
 .border-\[1px\] {
-  border-width: 1px;
-}
-
-.border {
   border-width: 1px;
 }
 
@@ -990,6 +1001,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1061,6 +1077,11 @@ video {
   padding-bottom: 24px;
 }
 
+.py-\[28px\] {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
 .py-\[32px\] {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -1084,6 +1105,10 @@ video {
   padding-bottom: 96px;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .pl-\[16px\] {
   padding-left: 16px;
 }
@@ -1094,6 +1119,10 @@ video {
 
 .pl-\[20px\] {
   padding-left: 20px;
+}
+
+.pr-\[22px\] {
+  padding-right: 22px;
 }
 
 .pt-\[16px\] {
