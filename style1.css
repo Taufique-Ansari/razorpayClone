@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1200px){
-    html{
+    html,body{
         font-family: 'Mulish', sans-serif;
         overflow-x: hidden;
         box-sizing: border-box;
@@ -8,9 +8,10 @@
     }
     .navbar{
         justify-content: space-between;
+        height: auto;
     }
     .logo{
-        padding: 0;
+        padding: 24px 0;
         float: left;
     }
     .nav-ele{
@@ -45,29 +46,112 @@
         /* margin-top: -1rem; */
     }
 
+    .sub-hero{
+        height: auto;
+    }
+    .sub-hero-ctn{
+        border: 0;
+        padding: 40px 32px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .sub-hero-ctn-h3{
+        font-size: 20px;
+    }
+    .sub-hero-ctn > img{
+        display: none;
+    }
+
     .check-list{
+        width: 100%;
         padding: 0;
+        margin-left: 0;
     }
     .grd-area{
         display: grid;
         grid-template-columns: auto auto;
+        @media only screen and (max-width: 700px){
+            grid-template-columns: auto;
+        }
     } 
 
     .grd-area-tab{
         height: 100%;
     }
-
-    .bs-area{
-        margin-top: 210px;
+    .blue-small-ctn{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        font-size: 15px;
+        height: auto;
+    }
+    .blue-small-ctn > a{
+        padding-top: 8px;
     }
 
+    .bs-area{
+        padding-top: 100px;
+        padding-bottom: 300px;
+        height: auto;
+        @media only screen and (max-width: 600px){
+
+        }
+    }
+    .bs-ctn > h2{
+        /* text-align: left; */
+        padding: 0;
+        font-size: 40px;
+    }
+    .bs-ctn > h2 > .span-gr{
+        color: rgb(143, 255, 143);
+    }
+
+    .bs-sub-ctn{
+        border: 0;
+        padding: 40px 32px;
+        margin: 0;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    @media only screen and (max-width: 400px){
+        .bs-sub-ctn > img{
+            display: none;
+        }   
+    }
     .bs-sub-ctn > img{
         width: 60%;
     }
-
+    .bs-check-list{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+        gap: 18px;
+    }
+    .bs-btn{
+        border: 0;
+        display: none;
+        text-align: left;
+    }
+    .bs-btn > button{
+        margin: 0;
+    }
     .bs-grd{
         display: grid;
         grid-template-columns: auto auto;
+        @media only screen and (max-width: 600px){
+            grid-template-columns: auto;
+        }
+    }
+    .last-ctn-grd{
+        display: grid;
+        grid-template-columns: auto auto;
+        @media only screen and (max-width: 600px){
+            grid-template-columns: auto;
+        }
     }
 
 }
