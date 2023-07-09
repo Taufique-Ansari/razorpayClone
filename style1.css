@@ -41,5 +41,33 @@
     .hero-sub-ele2 > img {
         width: 100%;
     }
+    .svg-sec{
+        /* margin-top: -1rem; */
+    }
+
+    .check-list{
+        padding: 0;
+    }
+    .grd-area{
+        display: grid;
+        grid-template-columns: auto auto;
+    } 
+
+    .grd-area-tab{
+        height: 100%;
+    }
+
+    .bs-area{
+        margin-top: 210px;
+    }
+
+    .bs-sub-ctn > img{
+        width: 60%;
+    }
+
+    .bs-grd{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 
 }
