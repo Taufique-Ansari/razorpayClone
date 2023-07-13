@@ -1,3 +1,6 @@
+.side-bar{
+    display: none;
+}
 @media only screen and (max-width: 1200px){
     html,body{
         font-family: 'Mulish', sans-serif;
@@ -9,13 +12,40 @@
     .navbar{
         justify-content: space-between;
         height: auto;
+        padding: 0 32px;
     }
     .logo{
-        padding: 24px 0;
-        float: left;
+        padding: 24px 0 24px 20px;
     }
+    
     .nav-ele{
         display: none;
+    }
+
+    .side-bar{
+        display: block;
+        background-color: white;
+        transition: all 0.5s linear;
+        font-size: 25px;
+        position: absolute;
+        width: 38vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        padding: 0 20px;
+        z-index: 100;
+    }
+    .hide-sidebar{
+        display: none;
+    }
+    .side-bar-ctn{
+        /* background-color: blue; */
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .side-bar-ele{
+        margin: 20px 20px 20px 25px;
+        line-height: 50px;
     }
     .hero-sec{
         display: block;
@@ -73,8 +103,7 @@
         @media only screen and (max-width: 700px){
             grid-template-columns: auto;
         }
-    } 
-
+    }
     .grd-area-tab{
         height: 100%;
     }
@@ -115,7 +144,7 @@
         height: auto;
         margin-bottom: 20px;
     }
-    @media only screen and (max-width: 400px){
+    @media only screen and (max-width: 600px){
         .bs-sub-ctn > img{
             display: none;
         }   
@@ -153,5 +182,33 @@
             grid-template-columns: auto;
         }
     }
+}
 
+@media only screen and (max-width: 500px){
+    .logo{
+        padding-left: 0px;
+    }
+    .btn-grp{
+        display: none;
+    }
+    .side-bar-btn{
+        display: block;
+        text-align: center;
+    }
+    .login-btn {
+        font-size: 15px;
+        width: 70% ;
+        height: 2rem;
+        margin-bottom: 8px;
+    }
+    .sign-btn{
+        font-size: 15px;
+        width: 70%;
+        height: 2rem;
+        margin: auto;
+    }
+    .side-bar{
+        padding: 0px 10px;
+        width: 45vw;
+    }
 }

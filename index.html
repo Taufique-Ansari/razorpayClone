@@ -73,15 +73,41 @@
                     <a href="#">Pricing</a>
                 </li>
             </ul>
-            <div class="flex items-center text-sm ml-2 ">
+            <div class="flex items-center">
                 <img class="" src="images/india-flag-icon.svg" alt="" width="28px" height="20px">
-                <button class="font-bold h-10 rounded-sm w-20 mx-2 border-[1px] border-solid border-blue-600 cursor-pointer hover:border-cyan-400 transition-all duration-200">Login</button>
-                <button class="font-bold h-10 rounded-sm w-24 px-2 text-[rgb(47,47,58)] bg-white cursor-pointer  hover:text-[rgb(4,3,43)] hover:animate-none">Sign Up
-                    <i class="fa-solid fa-arrow-right mx"></i>
-                </button>
+                <div class="btn-grp flex items-center text-sm ml-2 ">
+                    <button class="login-btn font-bold h-10 rounded-sm w-20 mx-2 border-[1px] border-solid border-blue-600 cursor-pointer hover:border-cyan-400 transition-all duration-200">Login</button>
+                    <button class="sign-btn font-bold h-10 rounded-sm w-24 px-2 text-[rgb(47,47,58)] bg-white cursor-pointer  hover:text-[rgb(4,3,43)] hover:animate-none">Sign Up
+                        <i class="fa-solid fa-arrow-right mx"></i>
+                    </button>
+                </div>
+                <div class="humburger ml-[20px] lg:hidden">
+                    <i class="fa-solid fa-bars w-full "></i>
+                </div>
             </div>
         </nav>
     </header>
+
+    <!----------------- Side Bar ----------------------->
+    <div class="side-bar hide-sidebar">
+        <i class="cross fa-solid fa-xmark"></i>
+        <div class="side-bar-ctn">
+            <ul class="side-bar-ele">
+                <li>Payments</li>
+                <li>Banking</li>
+                <li>Line of Credit</li>
+                <li>Payroll</li>
+                <li>Support</li>
+                <li>Pricing</li>
+            </ul>
+            <div class="side-bar-btn flex w-full text-[20px] text-white">
+                <button class="login-btn font-bold h-10 rounded-sm w-20 mx-2  bg-[#1e7efa] cursor-pointer hover:bg-[#006eff] hover:opacity-[0.8] hover:border-cyan-400 transition-all duration-200">Login</button>
+                <button class="sign-btn font-bold h-10 rounded-sm w-auto px-2 bg-[#1e7efa] hover:bg-[#006eff] hover:opacity-[0.8] cursor-pointer hover:animate-none">Sign Up
+                        <i class="fa-solid fa-arrow-right mx"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!--------------- Hero Section --------------------->
 
@@ -334,5 +360,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
