@@ -7,7 +7,6 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
-
 *,
 ::before,
 ::after {
@@ -62,7 +61,6 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
-  overflow-x: hidden;
   /* 2 */
 }
 
@@ -639,6 +637,10 @@ video {
   margin-left: 1px;
 }
 
+.ml-\[20px\] {
+  margin-left: 20px;
+}
+
 .ml-\[5px\] {
   margin-left: 5px;
 }
@@ -795,8 +797,16 @@ video {
   width: 25px;
 }
 
+.w-\[410px\] {
+  width: 410px;
+}
+
 .w-\[670px\] {
   width: 670px;
+}
+
+.w-\[680px\] {
+  width: 680px;
 }
 
 .w-\[950px\] {
@@ -815,16 +825,8 @@ video {
   max-width: 100%;
 }
 
-.max-w-\[410px\] {
-  max-width: 410px;
-}
-
 .max-w-\[510px\] {
   max-width: 510px;
-}
-
-.max-w-\[680px\] {
-  max-width: 680px;
 }
 
 .flex-grow {
@@ -866,6 +868,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -1286,6 +1292,18 @@ video {
   outline-style: solid;
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1352,6 +1370,10 @@ video {
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-\[0\.8\]:hover {
+  opacity: 0.8;
+}
+
 .hover\:shadow-3xl:hover {
   --tw-shadow: 2px -2px 50px -5px rgba(0,0,0,0.75);
   --tw-shadow-colored: 2px -2px 50px -5px var(--tw-shadow-color);
@@ -1369,4 +1391,10 @@ video {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
 }
