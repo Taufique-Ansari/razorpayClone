@@ -35,7 +35,7 @@
         background-color: white;
         transition: all 0.5s ease-in;
         font-size: 25px;
-        position: absolute;
+        position:fixed;
         width: 38vw;
         height: 100vh;
         top: 0;
