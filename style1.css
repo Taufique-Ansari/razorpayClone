@@ -22,6 +22,10 @@
         display: none;
     }
 
+    .hover-ctn1{
+        opacity: 1;
+    }
+
     .side-bar{
         display: block;
         background-color: white;
