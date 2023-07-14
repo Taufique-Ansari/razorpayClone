@@ -21,15 +21,19 @@
     .nav-ele{
         display: none;
     }
-
-    .hover-ctn1{
-        opacity: 1;
+    /* .nav-ele1-ctn{
+        visibility: hidden;
     }
+    .show-dropdwn{
+        visibility: visible;
+    } */
 
     .side-bar{
+        overflow-x: hidden;
         display: block;
+        visibility: visible;
         background-color: white;
-        transition: all 0.5s linear;
+        transition: all 0.5s ease-in;
         font-size: 25px;
         position: absolute;
         width: 38vw;
@@ -40,7 +44,10 @@
         z-index: 100;
     }
     .hide-sidebar{
-        display: none;
+        /* display: none; */
+        /* transform: translateX(300px); */
+        visibility: hidden;
+        opacity: 0;
     }
     .side-bar-ctn{
         /* background-color: blue; */
