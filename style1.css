@@ -27,7 +27,6 @@
     .show-dropdwn{
         visibility: visible;
     } */
-
     .side-bar{
         overflow-x: hidden;
         display: block;
@@ -220,6 +219,6 @@
     }
     .side-bar{
         padding: 0px 10px;
-        width: 45vw;
+        width: 55vw;
     }
 }

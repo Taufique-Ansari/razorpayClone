@@ -8,15 +8,14 @@ var navCtn = document.querySelector('.nav-ele1-ctn');
 humbuger.addEventListener('click', ()=> {
     console.log("hello");
     sideBar.classList.toggle('hide-sidebar');
+    if(!sideBar.classList.contains('hide-sidebar')){
+        console.log("working");
+        var x = document.getElementsByTagName("BODY")[0];
+        
+    }
 })
 
 cross.addEventListener('click', ()=>{
     console.log("2hello");
     sideBar.classList.add('hide-sidebar');
 })
-
-// navEle.addEventListener("mouseover",()=>{
-//     console.log("Hi");
-//     navCtn.classList.toggle('show-dropdwn');
-//     dash.classList.toggle('show-dropdwn');
-// })
